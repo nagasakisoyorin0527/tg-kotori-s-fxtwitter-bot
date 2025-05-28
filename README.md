@@ -1,4 +1,4 @@
-# tg-kotori-s-fxtwitter-bot
+# tg-soyorin-fxtwitter-bot
 A Telegram bot that improves link previews for **X (Twitter)** and **Bilibili** by automatically replacing URLs and replying with the modified message.
 
 ## Features
@@ -19,12 +19,16 @@ Modified message:
   https://fixupx.com/user_name/status/abc123
 </pre>
 
-## How to use
+# How to use
+## Access via share link:
+https://t.me/Soyorin_FxTwitter_Bot <br />
+Note: I run the code on my Raspberry Pi. I'll try to keep but running 24/7 is not guarantee
+## Setup your own bot
 - Install telegram-bot-python
 - Run the file "kotoris_fxtwitter_bot.py"
 - Keep it running
 - Access the bot by DM it or invite it to a group
 
-## 
+#
 fxtwitter & fixupx are made by https://github.com/FxEmbed/FxEmbed <br />
 bilibilibb is made by: https://bilibilibb.com/
