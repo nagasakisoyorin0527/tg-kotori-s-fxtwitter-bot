@@ -1,3 +1,7 @@
+#This bot is made by nagasakisoyorin0527
+#Remember to replace TOKEN with your bot token from BotFather on Telegram
+#Use pip install python-telegram-bot to install the essential library
+
 import logging
 import re
 import requests
@@ -29,7 +33,7 @@ def get_url(url):
     return remove_tracking
 
 # Replace with your bot token
-TOKEN = "7874979852:AAH-lXW0z3Z6tynn_ub2T2J5KBY80RpZ22g"
+TOKEN = "YOUR TOKEN HERE"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send a message when the command /start is issued."""
