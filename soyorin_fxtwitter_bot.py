@@ -33,25 +33,28 @@ def get_url(url):
     return remove_tracking
 
 # Replace with your bot token
-TOKEN = "YOUR TOKEN HERE"
+TOKEN = "7911645407:AAEs5M1H-CVY0MBClHiXwSNJaau98ldg1_Q"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Send a message when the command /start is issued."""
     await update.message.reply_text(
-        'Hi! I will monitor messages for x.com and twitter.com links and replace them with fixupx.com and fxtwitter.com links.'
+        'Hi! Welcome to use this bot. Use "/help" to get more information'
     )
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Send a message when the command /help is issued."""
     await update.message.reply_text(
-        'I monitor messages for x.com and twitter.com links and modify them.\n'
-        'x.com links will be changed to fixupx.com\n'
-        'twitter.com links will be changed to fxtwitter.com\n'
-        'I will try to edit messages directly or send a replacement if editing fails.'
+        "Welcome to use Soyorin's Fxtwitter Bot!\n"
+        "This bot is made by GitHub user nagasakisoyorin0527\n"
+        "The bot will edit and reply (delete the original message if possible) x.com, twitter.com, bilibili.com and b23.tv URLs"
+        "For more detailed information, visit https://github.com/nagasakisoyorin0527/tg-soyorin-fxtwitter-bot"
+        "Use /ping to chekc whether the bot is online"
     )
 
+async def pingpong(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+        await update.message.reply_text('pong')
+
+
 async def process_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Process incoming messages to check for x.com and twitter.com URLs and modify them."""
     if not update.message or not update.message.text:
         return
     
@@ -120,6 +123,7 @@ def main() -> None:
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
     application.add_handler(CommandHandler("debug", debug_command))
+    application.add_handler(CommandHandler("ping", pingpong))
     
     # Add message handler
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, process_message))
