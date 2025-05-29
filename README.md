@@ -21,8 +21,9 @@ Modified message:
 
 # How to use
 ## Access via share link:
-https://t.me/Soyorin_FxTwitter_Bot <br />
-Note: I run the code on my Raspberry Pi. I'll try to keep but running 24/7 is not guarantee
+- https://t.me/Soyorin_FxTwitter_Bot <br />
+- Invite the bot to a group
+- Allow the bot to read and delete messages
 ## Setup your own bot
 - Install telegram-bot-python
 - Run the file "kotoris_fxtwitter_bot.py"
