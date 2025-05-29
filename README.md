@@ -26,7 +26,8 @@ Modified message:
 - Allow the bot to read and delete messages
 ## Setup your own bot
 - Install telegram-bot-python
-- Run the file "kotoris_fxtwitter_bot.py"
+- Download the file "soyorin_fxtwitter_bot.py"
+- Replace TOKEN with your bot's token and run the file
 - Keep it running
 - Access the bot by DM it or invite it to a group
 
