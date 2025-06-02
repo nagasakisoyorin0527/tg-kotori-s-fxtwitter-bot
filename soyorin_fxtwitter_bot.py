@@ -33,7 +33,7 @@ def get_url(url):
     return remove_tracking
 
 # Replace with your bot token
-TOKEN = "7911645407:AAEs5M1H-CVY0MBClHiXwSNJaau98ldg1_Q"
+TOKEN = "YOUR_TOKEN"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text(
